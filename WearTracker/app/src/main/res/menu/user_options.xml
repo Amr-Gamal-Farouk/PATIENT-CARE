@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_open_map"
+        android:orderInCategory="100"
+        android:title="فتح الخريطه"/>
+
+    <item
+        android:id="@+id/menu_drugs_time"
+        android:orderInCategory="100"
+        android:title="مواعيد العلاج"/>
+    <item
+        android:id="@+id/menu_message"
+        android:orderInCategory="100"
+        android:title="فتح المحادثه"/>
+    <item
+        android:id="@+id/menu_drugs_report"
+        android:orderInCategory="100"
+        android:title="متابعه"/>
+    <item
+        android:id="@+id/menu_call_user"
+        android:orderInCategory="100"
+        android:title="اتصال صوتي"/>
+
+
+</menu>

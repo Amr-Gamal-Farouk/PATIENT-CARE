@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amrgamal.weartracker">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login_Activity"
+            android:label=" Wear tracker">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration_Activity"
+            android:label="عمل حساب"
+            android:parentActivityName=".Login_Activity" />
+        <activity
+            android:name=".Home_Activity"
+            android:label="الرئيسيه"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Insert_User_Activity"
+            android:label="اضافه مستخدم جديد"
+            android:parentActivityName=".Home_Activity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".User_Map_Location"
+            android:label="الخريطه" />
+        <activity
+            android:name=".Insert_Drugs_Activity"
+            android:label="الادويه"
+            android:parentActivityName=".Home_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Drugs_Report" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="المحادثه"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddDrugs"
+            android:label="ادخال علاج جديد"
+            android:parentActivityName=".Insert_Drugs_Activity" />
+
+        <receiver
+            android:name=".LocationHandlerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="thirdeye.LOCATION_RECEIVED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="test" />
+
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <!-- [END firebase_iid_service] -->
+        <activity android:name=".Dangerous"></activity>
+
+
+        <service android:name=".SinchService"></service>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            >
+
+        </activity>
+
+        <activity android:name=".CallScreenActivity"/>
+
+        <activity android:name=".IncomingCallScreenActivity" android:screenOrientation="portrait"
+            android:noHistory="true"/>
+
+        <activity android:name=".PlaceActivity" android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amrgamal.weartracker.AddDrugs">
+
+    <EditText
+        android:id="@+id/editDrugsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="ادخل اسم الدواء" />
+
+    <Button
+        android:id="@+id/addDrugsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDrugsName"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:text="اضف ميعاد" />
+
+    <Button
+        android:id="@+id/addImageBu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDrugsTime"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:text="اضافه صوره" />
+
+    <Button
+        android:id="@+id/deleteDrugsTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="حذف جميع المواعيد" />
+
+    <TextView
+        android:id="@+id/drugsTimeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addImageBu"
+        android:background="@color/blueGrey"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="لم يتم ادخال ميعاد"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/drugsSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/toolbar"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/deleteDrugsTimes"
+        android:text="حفظ المواعيد" />
+
+</RelativeLayout>

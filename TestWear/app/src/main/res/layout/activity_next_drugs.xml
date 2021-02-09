@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueGrey"
+    tools:context="com.example.amrgamal.testwear.NextDrugs">
+
+    <TextView
+        android:id="@+id/prevDrugs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#fff"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/addTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prevDrugs"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar"
+        android:textColor="#fff"
+        android:layout_marginTop="19dp"
+        android:text="تم اخذ الدواء" />
+</RelativeLayout>

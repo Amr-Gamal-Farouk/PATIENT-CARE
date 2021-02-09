@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#fff"
+    android:layout_margin="4dp"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    android:id="@+id/item_linear">
+
+
+
+    <TextView
+        android:id="@+id/user_drug"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="العلاج"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/user_drug_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="15dp"
+        android:gravity="left"
+        android:textSize="10sp"
+        android:text="5:10 AM" />
+
+</LinearLayout>

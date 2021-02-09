@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:layout_margin="8dp"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U"
+        android:background="@drawable/image_circle"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الاسم"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/mMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اخر رساله"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="15dp"
+        android:gravity="left"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/new_message_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_launcher_new_message"
+        />
+
+
+
+</LinearLayout>

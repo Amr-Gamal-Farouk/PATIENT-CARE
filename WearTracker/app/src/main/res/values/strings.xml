@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wear Tracker</string>
+    <string name="title_activity_home_">Home_Activity</string>
+    <string name="title_activity_user__map__location">Map</string>
+    <string name="title_activity_insert__drugs_">Insert_Drugs_Activity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+</resources>
